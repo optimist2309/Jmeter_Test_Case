@@ -1,0 +1,19 @@
+Assertion in JMeter is used to validate response of the request, that you have sent to the server. Assertion is a process where you verify expected result with the actual result of the request at run time. If you need to apply assertion on a particular Sampler, then add it as a child of that Sampler.
+
+You can view assertion results by adding “Assertion Listener” to the Thread Group. Failed assertions will be displayed in other listeners as well.
+
+
+1:  Response Assertion: 
+Response Assertion can be used to add and compare pattern strings against one or many values of server response.
+
+2:  Size Assertion
+Size Assertion is used to verify the server response contains expected number of Bytes or not.
+
+3:  Duration Assertion
+Duration Assertion is used to verify that server response is received within a specified time constraint or not. It will mark the sample request as failed, if response takes longer time duration than the given amount of time.
+
+4:  XML Assertion
+XML Assertion is used to verify that the server response data comprises of a correct XML document or not.
+
+5:  HTML Assertion
+HTML Assertion is used to verify that the response contains correct HTML syntax or not using JTidy (HTML Syntax Checker). It will fail the test in case of improper HTML syntax response.
